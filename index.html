@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button id="colorChange">Generate</button>
+         <h2 id="hexCode">color code</h2>
+</body>
+<script>
+    //select the body
+const colorName = document.querySelector('body');
+//select the button
+const changeBtn = document.getElementById('colorChange');
+    //select the h2
+    let text = document.getElementById("hexCode").innerText;
+
+
+changeBtn.addEventListener('click', changeColor);
+
+function changeColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    let color = "rgb(" + r + "," + g + "," + b + ")";
+
+    colorName.style.backgroundColor = color;
+    hexCode.innerText = color;
+}
+</script>
+</html>

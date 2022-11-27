@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background: #e7e9eb;
+    font-weight: bold;
+
+}
+
+body{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    max-width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    padding: 1.5%;
+    width:150px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+h2{
+    background: transparent;
+    color:#fff;
+}
+@media only screen and(min-width:600px){
+   body{
+       width:100%;
+       font-family: Verdana;
+}
+    
+}
